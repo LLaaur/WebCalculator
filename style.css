@@ -32,17 +32,18 @@ body{
     font-size: 3rem;
     text-align: end;
     padding: 0 1rem;
+    overflow: hidden;
 }
 
 .current-display{
-    min-height: 60px;
-    min-width: 350px;
+    height: 60px;
+    width: 350px;
     font-size: 3rem;
 }
 
 .last-display{
-    min-height: 60px;
-    min-width: 350px;
+    height: 60px;
+    width: 350px;
     font-size: 1.5rem;
 }
 
