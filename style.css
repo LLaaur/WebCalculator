@@ -23,8 +23,6 @@ body{
 }
 
 .calculator-display{
-    width: 380px;
-    height: 70px;
     background-color: #3939df;
     border: 3px solid black;
     align-self: center;
@@ -33,6 +31,19 @@ body{
     color: #dcea4c;
     font-size: 3rem;
     text-align: end;
+    padding: 0 1rem;
+}
+
+.current-display{
+    min-height: 60px;
+    min-width: 350px;
+    font-size: 3rem;
+}
+
+.last-display{
+    min-height: 60px;
+    min-width: 350px;
+    font-size: 1.5rem;
 }
 
 .calculator-buttons{
