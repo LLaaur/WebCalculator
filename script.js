@@ -3,6 +3,8 @@ const numbers = document.querySelectorAll('.show.number');
 const operators = document.querySelectorAll('.show.operator');
 const remove = document.querySelector('.del');
 const allClear = document.querySelector('.ac');
+const decimal = document.querySelector('.show.decimal');
+
 
 let operandX = '';
 let operandY = '';
@@ -51,6 +53,19 @@ const cleanDisplay = function () {
     cleanCalculatorDisplay = false;
 }
 
+const decimals = function(){
+    if (currentOperationDisplay.textContent.includes('.')){
+        return
+    }
+    if (currentOperationDisplay.textContent === ''){
+        currentOperationDisplay.textContent = '0'
+    }
+    if (cleanCalculatorDisplay) cleanDisplay()
+
+    currentOperationDisplay.textContent += decimal.textContent
+}
+
+
 
 const declareOperation = function (operator) {
     if (currentOperation !== null) calculate();
@@ -75,7 +90,7 @@ const calculate = function () {
 };
 
 const roundNumber = function (num) {
-    return Math.round(num * 1000) / 1000;
+    return Math.round(num * 100) / 100;
 };
 
 const add = function (x, y) {
@@ -95,8 +110,8 @@ const divide = function (x, y) {
 }
 
 const operate = function (operator, x, y) {
-    x = parseInt(x);
-    y = parseInt(y);
+    x = Number(x);
+    y = Number(y);
     // CHECKING FOR ALL OPERATORS
     if (operator === '+') {
         return add(x, y)
@@ -117,3 +132,5 @@ const operate = function (operator, x, y) {
 
 const equal = document.querySelector('.equals');
 equal.addEventListener('click', calculate);
+
+decimal.addEventListener('click', decimals);
