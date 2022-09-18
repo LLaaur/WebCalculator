@@ -11,3 +11,6 @@ I. Getting a better grasp at reusing variables
 II. Rounding a number to have a max of 2 decimals
 
 III. Adding event-listeners to multiple buttons using built-in JS functions
+
+
+👉 <a href="https://llaaur.github.io/WebCalculator/"> Live demo </a>
