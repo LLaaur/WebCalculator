@@ -12,5 +12,7 @@ II. Rounding a number to have a max of 2 decimals
 
 III. Adding event-listeners to multiple buttons using built-in JS functions
 
+![web calculator](https://user-images.githubusercontent.com/102544514/193110680-9cf27545-cb1f-4ae3-b751-8c5e7d5fd0e0.png)
+
 
 👉 <a href="https://llaaur.github.io/WebCalculator/"> Live demo </a>
